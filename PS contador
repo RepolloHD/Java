@@ -1,0 +1,8 @@
+Algoritmo ola
+	var1 = 0
+	Mientras var1 <= 20
+		Escribir var1
+		var1 = var1 + 2
+	FinMientras
+	
+FinAlgoritmo
