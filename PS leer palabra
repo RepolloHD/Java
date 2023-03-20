@@ -1,0 +1,11 @@
+Algoritmo Hola
+	Definir Palabra Como Caracter
+	Definir l Como Numero
+	Definir Letras Como Caracter
+	Escribir "Ingresa una palabra:"
+	Leer Palabra
+	Para l <- 1  Hasta Longitud(Palabra) Con Paso 1 Hacer
+		Letras <- Subcadena(Palabra,1,1)
+		Escribir Letras
+	FinPara
+FinAlgoritmo
