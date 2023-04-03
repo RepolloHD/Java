@@ -1,0 +1,26 @@
+package l;
+
+/**
+ *
+ * @author USS
+ */
+public class L {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        int x=30, y= 100, z=18;
+        if (x> y & x> z){
+            System.out.print(" x es mayor ");
+        }
+        if (y> x & y> z){
+            System.out.print("y es mayor");
+        }
+        else if (z>x & z>y){
+            System.out.print("z es mayor");}
+    }
+    
+    
+}
