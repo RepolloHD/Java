@@ -1,0 +1,39 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package l;
+
+
+public class L {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+            Persona per1 = new Persona ("Juan");
+            System.out.println(per1.getNombre());
+            System.out.println(per1.getEdad());
+            Persona per2 = new Persona ("Luis");
+            per2.putEdad(35);
+            System.out.println(per2.getNombre());
+            System.out.println(per2.getEdad());
+        }
+    }
+public class Persona {
+        int edad = 0 ;
+        String nombre = "anonimo";
+        public Persona(String nuevoNombre){
+            edad = 0;
+            nombre = nuevoNombre;
+    }
+        public String getNombre(){
+            return nombre;
+    }
+        public void putEdad(int newEdad){
+            edad = newEdad;
+    }
+        public int getEdad(){
+            return edad;
+    }
+}
