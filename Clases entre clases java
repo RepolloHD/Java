@@ -1,0 +1,49 @@
+public class EjercicioBanco {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Cuenta cuenta_1 = new Cuenta(123456, 2505.32);
+       cuenta_1.depositar(200.0);
+       double total_cuenta = cuenta_1.getSaldo(); 
+       cuenta_1.depositar(239.0);
+       System.out.println("total actual en la cuenta"+ total_cuenta + "Eu ros");
+    }
+    
+}
+
+
+
+class Cuenta 
+    {
+        private double saldo;
+        private int codigo;
+        
+    public  Cuenta (int codigo , double saldo){
+        this.saldo = saldo;
+        this.codigo = codigo;
+    }
+            
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+        
+    public double getSaldo() {
+        return this.saldo;
+        
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+    
+    public void depositar (double saldo){
+        this.saldo = this.saldo + saldo;
+    }
+            
+}
