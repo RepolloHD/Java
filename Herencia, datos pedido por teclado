@@ -1,0 +1,55 @@
+package app;
+import java.util.Scanner;
+    /**
+     * @param args the command line arguments
+     */
+//Código de la clase Persona
+class Persona {
+    private String nombre;
+    private String apellidos;
+    private int edad;
+//Constructor
+public Persona (String nombre, String apellidos, int edad) {
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+    this.edad = edad;}
+//Métodos
+    public String getNombre () { return this.nombre;}
+    public String getApellidos () { return this.apellidos; }
+    public int getEdad () { return this.edad; }
+}
+//Código de la clase profesor, subclase de la clase Persona
+class Profesor extends Persona{
+//Campos específicos de la subclase.
+    private String IdProfesor;
+//Constructor de la subclase: incluimos como parámetros al menos los del constructor de la superclase
+public Profesor (String nombre, String apellidos, int edad) {
+    super(nombre, apellidos, edad);
+    IdProfesor = "Unknown";}
+//Métodos específicos de la subclase
+
+public void setIdProfesor (String IdProfesor) { this.IdProfesor = IdProfesor;}
+public String getIdProfesor () { return IdProfesor;}
+public void mostrarNombreApellidosYId() {
+// nombre = "Paco"; Si tratáramos de acceder directamente a un campo privado de lasuperclase, salta un error
+// Sí podemos acceder a variables de instancia a través de los métodos de acceso públicos de la superclase
+System.out.println("Profesor de nombre: " + getNombre() + " " +getApellidos() + " con Id deprofesor: " + getIdProfesor() );
+}
+}
+public class App {
+    public static void main(String[] args) {
+        Scanner var1 = new Scanner (System.in);
+        System.out.print("Ingrese su nombre");
+        String Nombre = var1.next();
+        System.out.print("Ingrese su apellido");
+        String Apellido = var1.next();
+        System.out.println("Ingrese su edad");
+        int edad = var1.nextInt();
+        
+        Profesor profesor1 = new Profesor(Nombre, Apellido,edad);
+        profesor1.setIdProfesor("Prof 22-387-11");
+        profesor1.mostrarNombreApellidosYId();
+        
+}
+}
+
