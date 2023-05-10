@@ -1,0 +1,21 @@
+package palabra;
+import java.util.Scanner;
+public class Palabra {
+
+    public static void main(String[] args) {
+       Scanner var1 = new Scanner (System.in);
+       System.out.println("Ingrese un palabra");
+       String frase = var1.nextLine();       
+    
+       Palabra quitar = new Palabra();
+       quitar.cuentaPalabra(frase);
+    }
+    
+
+    public void cuentaPalabra(String frase){
+        String[] palabra;
+        palabra = frase.split(" ");
+        System.out.println(palabra.length);
+
+    }
+}    
