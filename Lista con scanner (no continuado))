@@ -1,0 +1,32 @@
+package list;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ *
+ * @author A7
+ */
+public class List {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner var1 = new Scanner(System.in);
+        System.out.println("Ingrese cualquier palabra");
+        String Palabra = var1.nextLine();
+        ArrayList<String> contenerPalabras = new ArrayList();
+        contenerPalabras.add(Palabra);
+        System.out.println(contenerPalabras); 
+        int a= 1
+        while (a){
+            if (contenerPalabras.equals("a"))
+                break
+            if (contenerPalabras.equals("A"))
+                break
+        }
+            
+    }
+    
+}
