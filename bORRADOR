@@ -1,0 +1,6 @@
+#Scanner var1 = new Scanner(System.in);
+        System.out.println("Ingrese cualquier palabra");
+        String Palabra = var1.nextLine();
+        ArrayList<String> contenerPalabras = new ArrayList();
+        contenerPalabras.add(Palabra);
+        System.out.println(contenerPalabras)
